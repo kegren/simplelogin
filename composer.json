@@ -1,0 +1,19 @@
+{
+    "name": "kegren/sody",
+    "description": "User authentication and authorization system",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kenny Damgren",
+            "email": "kennydamgren@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sody\\": "Sody/src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4"
+    }
+}

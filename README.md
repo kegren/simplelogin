@@ -1,2 +1,1 @@
-simplelogin
-===========
+# Simple login system built with PHP 5.4.
