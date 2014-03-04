@@ -57,7 +57,6 @@ class Auth
      * Generates password based on provided password
      *
      * @param  string $pwd
-     * @param  string $salt
      * @return string
      */
     public function generatePwd($pwd)
@@ -73,7 +72,7 @@ class Auth
      *
      * @param  string $username
      * @param  string $password
-     * @return mixed
+     * @return boolean|null
      */
     public function attempt($username = '', $password = '')
     {
