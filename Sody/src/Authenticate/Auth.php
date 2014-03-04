@@ -55,7 +55,6 @@ class Auth
 
     /**
      * Generates password based on provided password
-     * and salt. Reveres created_at row as used salt
      *
      * @param  string $pwd
      * @param  string $salt
