@@ -3,13 +3,14 @@
 namespace Sody\Authorization;
 
 use Sody\Repository\BaseRepository;
+use Sody\Authorization\GroupInterface;
 
 /**
  * Group class
  *
  * @author Kenny Damgren <kennydamgren@gmail.com>
  */
-class Group
+class Group implements GroupInterface
 {
     /**
      * BaseRepository object
