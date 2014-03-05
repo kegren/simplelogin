@@ -3,7 +3,7 @@
 namespace Sody\Authenticate;
 
 use Sody\User;
-use Sody\Repository\UserRepository;
+use Sody\Repository\BaseRepository;
 
 /**
  * Authenticate class
@@ -15,9 +15,9 @@ class Auth
     const SALT = 'SokeAKjdaw12AmSjDEolM';
 
     /**
-     * UserRepository object
+     * BaseRepository object
      *
-     * @var Sody\Repository\UserRepository
+     * @var Sody\Repository\BaseRepository
      */
     private $repo = null;
 
@@ -35,7 +35,7 @@ class Auth
      */
     private $whitelist = ['id', 'email', 'username', 'firstName', 'lastName'];
 
-    public function __construct(UserRepository $repo = null)
+    public function __construct(BaseRepository $repo = null)
     {
         $this->repo = $repo;
         $this->session = &$_SESSION;
