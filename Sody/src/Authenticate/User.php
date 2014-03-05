@@ -3,7 +3,7 @@
 namespace Sody\Authenticate;
 
 use Sody\Authenticate\UserInterface;
-use Sody\Authorization\Group;
+use Sody\Authorization\GroupInterface;
 use Sody\Repository\BaseRepository;
 
 /**
@@ -23,7 +23,7 @@ class User implements UserInterface
     /**
      * Group object
      *
-     * @var Sody\Authorization\Group
+     * @var Sody\Authorization\GroupInterface
      */
     private $group = null;
 
@@ -37,12 +37,12 @@ class User implements UserInterface
      * Constructor
      *
      * @param Sody\Repository\BaseRepository $repo
-     * @param Sody\Authorization\Group $group
+     * @param Sody\Authorization\GroupInterface $group
      * @param array $userData
      */
     public function __construct(
         BaseRepository $repo = null,
-        Group $group = null,
+        GroupInterface $group = null,
         $userData = []
     ) {
         $this->repo = $repo;
